@@ -29,6 +29,22 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+		* {
+  			box-sizing: border-box;
+		}
+		.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+	/* Clearfix (clear floats) */
+	.row::after {
+	content: "";
+	clear: both;
+	display: table;
+	}
+
 body {
 	line-height: 1;
 }
@@ -104,6 +120,8 @@ input, select, textarea {
 		font-weight: 300;
 		font-size: 13pt;
 	}
+
+
 
 	a {
 		-moz-transition: color .2s ease-in-out;
@@ -2442,4 +2460,5 @@ input, select, textarea {
 						margin-top: 0;
 					}
 
+		
 	}
