@@ -51,7 +51,9 @@ footer, header, hgroup, menu, nav, section {
 	}
 
 	.row2::after {
-		display:flex
+		content: "";
+		clear: both;
+		display: table;
 	}
 
 body {
